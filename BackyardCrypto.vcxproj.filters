@@ -19,6 +19,9 @@
     <Filter Include="Header Files\Base">
       <UniqueIdentifier>{dac3bee3-6a16-4343-aa48-2eb8a73adc77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Ciphers">
+      <UniqueIdentifier>{13d8a062-7ffe-45f9-a11f-b737cad0834b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -43,6 +46,24 @@
     </ClInclude>
     <ClInclude Include="Base\Message.h">
       <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Iterator.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Iterable.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CipherLocator.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciphers\RotN.h">
+      <Filter>Header Files\Ciphers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciphers\Armor.h">
+      <Filter>Header Files\Ciphers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciphers\WhiteRemove.h">
+      <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
