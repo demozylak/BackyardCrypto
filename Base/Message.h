@@ -12,13 +12,13 @@ class Message
 {
 public:
 	/* read message from input */
-	Message(AbstractInput &input);
+	Message(AbstractInput *input);
 
 	/* pass message to output */
-	virtual Message* outMessage(AbstractOutput &output);
+	virtual Message* outMessage(AbstractOutput *output);
 
 	/* visitor pattern */
-	virtual Message* encrypt(AbstractCipher &cipher);
-	virtual Message* decrypt(AbstractCipher &cipher);
+	virtual Message* encrypt(AbstractCipher *cipher);
+	virtual Message* decrypt(AbstractCipher *cipher);
 };
 

@@ -22,7 +22,7 @@ public:
 	...
 	...
 	*/
-	KeyReader(AbstractInput &input);
+	KeyReader(AbstractInput *input);
 
 	
 };

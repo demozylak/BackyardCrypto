@@ -9,7 +9,7 @@ class AbstractCipher
 {
 public:
 	/* algorithms key as param */
-	AbstractCipher(Key &key) {};
+	AbstractCipher(Key *key) {};
 
 	/* returns ciphers name eg "rot13", "AES" (xd) */
 	virtual std::string getName() = 0;

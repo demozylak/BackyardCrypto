@@ -9,7 +9,7 @@ class CipherLocator
 {
 public:
 	/* Returns cipher reference by its key (key has ciphers name) */
-	AbstractCipher * getCipher(Key &key);
+	AbstractCipher * getCipher(Key *key);
 
 };
 
