@@ -27,6 +27,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StdOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abstract\Cipher.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Ciphers\WhiteRemove.h">
       <Filter>Header Files\Ciphers</Filter>
+    </ClInclude>
+    <ClInclude Include="StdOutput.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
