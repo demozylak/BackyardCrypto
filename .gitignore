@@ -5,3 +5,5 @@ Release/*
 *.sln
 *.suo
 *.vcxproj
+/BackyardCrypto.VC.db
+/BackyardCrypto.VC.VC.opendb
