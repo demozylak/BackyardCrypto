@@ -30,6 +30,9 @@
     <ClCompile Include="StdOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Gaderypoluki.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Ciphers\WhiteRemove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -65,20 +68,20 @@
     <ClInclude Include="Base\CipherLocator.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Ciphers\RotN.h">
+    <ClInclude Include="StdOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciphers\Gaderypoluki.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
     <ClInclude Include="Ciphers\Armor.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
-    <ClInclude Include="Ciphers\WhiteRemove.h">
+    <ClInclude Include="Ciphers\RotN.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
-    <ClInclude Include="StdOutput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Ciphers\WhiteRemove.h">
+      <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

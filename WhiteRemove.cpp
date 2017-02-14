@@ -24,11 +24,5 @@ string WhiteRemove::decrypt(std::string message){
 	return message;
 }
 
-/*Does nothing so far*/
-string WhiteRemove::encrypt(std::string message)
-{
-	return std::string();
-}
 
-
-
+/*Returns message*/

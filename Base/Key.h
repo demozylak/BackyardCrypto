@@ -12,7 +12,7 @@ public:
 	/* method - cipher name */
 	Key(std::string method, std::string password);
 	
-	virtual std::string getMethod();	//returns method name
+	virtual std::string getMethod	 ();	//returns method name
 	virtual std::string getPassword();	//returns password
 };
 

@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <cctype>
 #include "../Abstract/Cipher.h"
-
 /*
 encode - removes all whitespace from message
 decode - do nothing (cant tell where they were anyway xD)
@@ -13,7 +12,7 @@ class WhiteRemove :
 {
 	protected:
 		Key *key;
-		string input_message;
+
 
 	public:
 		WhiteRemove(Key *key);

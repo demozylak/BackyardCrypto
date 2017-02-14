@@ -1,3 +1,8 @@
+#include<iostream>
+#include "Base\Key.h"
+#include "Ciphers\Gaderypoluki.h"
+
+using namespace std;
 
 /* BackyardCrypto.exe (-e|-d) [messagefile] [keyfile] [-o file] 
 
@@ -8,8 +13,23 @@ BackyardCrypto.exe -e msg.txt key.txt				# encrypt, stdout
 
 */
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv){
+
+	/*GADERYPOLUKI TEST*/
+
+	Key *key = new Key("asd", "asda");
+	Gaderypoluki gad(key);
+
+	string demo = "ALA MA KOTA";
+	string out;
+	out = gad.encrypt(demo);
+
+	cout << out << endl;
+	system("pause");
+
+	/*END OF GADERYPOLUKI TEST*/
+
+
 	//Validate args
 	//Check if params are correct(show help otherwise)
 	//set variables like  (empty string if no param given)
