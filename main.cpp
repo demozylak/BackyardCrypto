@@ -7,14 +7,9 @@ BackyardCrypto.exe -d								# asks for msg and key , decrypt, stdout
 BackyardCrypto.exe -e msg.txt key.txt				# encrypt, stdout
 
 */
-#include  "StdOutput.h"
+
 int main(int argc, char** argv)
 {
-	StdOutput *a = new StdOutput("wiadomosc");
-
-	a->outString("kupa dupa\nasdasd\nasdasd");
-	system("pause");
-
 	//Validate args
 	//Check if params are correct(show help otherwise)
 	//set variables like  (empty string if no param given)
