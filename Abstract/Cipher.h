@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "Key.h"
+#include "../Base/Key.h"
 
 /*
 Ciphers derivate from this
