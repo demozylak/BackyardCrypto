@@ -6,3 +6,5 @@ Release/*
 *.suo
 /BackyardCrypto.VC.db
 /BackyardCrypto.VC.VC.opendb
+ipch/*
+Test/*
