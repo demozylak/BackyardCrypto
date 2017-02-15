@@ -8,6 +8,4 @@ but for N not only 13
 */
 class RotN : AbstractCipher
 {
-
 };
-

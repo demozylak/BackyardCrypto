@@ -39,6 +39,9 @@
     <ClCompile Include="Base\Key.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mathalphabet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abstract\Cipher.h">
@@ -81,6 +84,9 @@
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
     <ClInclude Include="Ciphers\WhiteRemove.h">
+      <Filter>Header Files\Ciphers</Filter>
+    </ClInclude>
+    <ClInclude Include="mathalphabet.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,20 +7,18 @@
 encode - removes all whitespace from message
 decode - do nothing (cant tell where they were anyway xD)
 */
-class WhiteRemove : 
+class WhiteRemove :
 	public AbstractCipher
 {
-	protected:
-		Key *key;
+protected:
+	Key *key;
 
+public:
+	WhiteRemove();
+	~WhiteRemove();
 
-	public:
-		WhiteRemove();
-		~WhiteRemove();
-
-		void setKey(Key *key);
-		std::string getName();
-		std::string decrypt(std::string message);
-		std::string encrypt(std::string message);
+	void setKey(Key *key);
+	std::string getName();
+	std::string decrypt(std::string message);
+	std::string encrypt(std::string message);
 };
-
