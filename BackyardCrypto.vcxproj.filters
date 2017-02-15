@@ -33,10 +33,10 @@
     <ClCompile Include="Gaderypoluki.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ciphers\WhiteRemove.cpp">
+    <ClCompile Include="Base\Key.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Base\Key.cpp">
+    <ClCompile Include="WhiteRemove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
