@@ -1,16 +1,19 @@
 #pragma once
+#include <string>
+#include <algorithm>
 #include "Abstract\Cipher.h"
-class MathAlphabet :
-	public AbstractCipher
+
+class MathAlphabet : AbstractCipher
 {
+protected:
+	Key *key;
+
 public:
 	MathAlphabet();
 	~MathAlphabet();
+
 	void setKey(Key *key);
 	std::string getName();
 	std::string decrypt(std::string message);
 	std::string encrypt(std::string message);
-protected:
-	Key *key;
 };
-

@@ -68,7 +68,7 @@
     <ClCompile Include="Ciphers\WhiteRemove.cpp" />
     <ClCompile Include="Gaderypoluki.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="mathalphabet.cpp" />
+    <ClCompile Include="MathAlphabet.cpp" />
     <ClCompile Include="StdOutput.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -85,7 +85,7 @@
     <ClInclude Include="Ciphers\Gaderypoluki.h" />
     <ClInclude Include="Ciphers\RotN.h" />
     <ClInclude Include="Ciphers\WhiteRemove.h" />
-    <ClInclude Include="mathalphabet.h" />
+    <ClInclude Include="MathAlphabet.h" />
     <ClInclude Include="StdOutput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

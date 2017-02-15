@@ -1,6 +1,5 @@
-/*#include "Ciphers\mathalphabet.h" */ //no idea why doesn't it work, maybe after restart it'll sort itself out
-#include "mathalphabet.h"
 #include <assert.h>
+#include "MathAlphabet.h" //i made this file MANUALLY inside /Ciphers, why the hell does it appear to be in main folder?
 using namespace std;
 MathAlphabet::MathAlphabet()
 {
@@ -17,8 +16,8 @@ void MathAlphabet::setKey(Key * key)
 }
 
 
-string MathAlphabet::getName(){
-	return key->getMethod();
+string MathAlphabet::getName() {
+	return "MathAlphabet";
 }
 
 string MathAlphabet::decrypt(string message)
@@ -51,7 +50,7 @@ string MathAlphabet::encrypt(string message)
 	int temp;
 	for (int i = 0; i < message.length; i++)
 	{
-		temp=klucz.find(message.at(i));
+		temp = klucz.find(message.at(i));
 		message.at(i) = klucz.at(temp);
 	}
 	//need to make unit test here to check if this works

@@ -39,7 +39,7 @@
     <ClCompile Include="Base\Key.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mathalphabet.cpp">
+    <ClCompile Include="MathAlphabet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,7 +86,7 @@
     <ClInclude Include="Ciphers\WhiteRemove.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
-    <ClInclude Include="mathalphabet.h">
+    <ClInclude Include="MathAlphabet.h">
       <Filter>Header Files\Ciphers</Filter>
     </ClInclude>
   </ItemGroup>
