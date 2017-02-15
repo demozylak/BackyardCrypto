@@ -30,13 +30,13 @@ namespace UnitTests
 		TEST_METHOD(Encoder)
 		{
 			WhiteRemove *t = new WhiteRemove();
-			string ret = t->encrypt("Ala ma kota");
+			string ret = t->encrypt("Ala ma kota ");
 
 			Assert::AreEqual((string)"Alamakota", ret);
 
-			ret = t->encrypt("Ala ma kota\na kot ma ale");
+			ret = t->encrypt("  Ala ma kota\na kot ma Ale");
 
-			Assert::AreEqual((string)"Alamakotaakotmaale", ret);
+			Assert::AreEqual((string)"AlamakotaakotmaAle", ret);
 
 		}
 	};
