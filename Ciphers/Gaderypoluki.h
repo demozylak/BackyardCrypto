@@ -9,9 +9,10 @@ protected:
 	Key *key;
 
 public:
-	Gaderypoluki(Key *key);
+	Gaderypoluki();
 	~Gaderypoluki();
 
+	void setKey(Key *key);
 	std::string getName();
 	std::string decrypt(std::string message);
 	std::string encrypt(std::string message);

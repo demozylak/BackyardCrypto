@@ -18,7 +18,8 @@ int main(int argc, char** argv){
 	/*GADERYPOLUKI TEST*/
 
 	Key *key = new Key("asd", "asda");
-	Gaderypoluki gad(key);
+	Gaderypoluki gad;
+	gad.setKey(key);
 
 	string demo = "ALA MA KOTA";
 	string out;

@@ -15,9 +15,10 @@ class WhiteRemove :
 
 
 	public:
-		WhiteRemove(Key *key);
+		WhiteRemove();
 		~WhiteRemove();
 
+		void setKey(Key *key);
 		std::string getName();
 		std::string decrypt(std::string message);
 		std::string encrypt(std::string message);

@@ -2,14 +2,16 @@
 
 using namespace std;
 
-WhiteRemove::WhiteRemove(Key *key) : AbstractCipher(NULL){
-	
-	this->key = key;
+WhiteRemove::WhiteRemove() : AbstractCipher(){
 
 }
 
 WhiteRemove::~WhiteRemove(){
 
+}
+
+void WhiteRemove::setKey(Key * key){
+	this->key = key;
 }
 
 string WhiteRemove::getName(){

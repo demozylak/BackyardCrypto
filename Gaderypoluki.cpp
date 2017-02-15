@@ -13,13 +13,10 @@
 
 using namespace std;
 
-Gaderypoluki::Gaderypoluki(Key *key) : AbstractCipher(NULL){
-	this->key = key;
+
+Gaderypoluki::Gaderypoluki() : AbstractCipher (){
+
 }
-
-
-
-
 
 Gaderypoluki::~Gaderypoluki(){
 
@@ -29,6 +26,10 @@ Gaderypoluki::~Gaderypoluki(){
 
 
 
+
+void Gaderypoluki::setKey(Key * key){
+	this->key = key;
+}
 
 string Gaderypoluki::getName(){
 
