@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <algorithm>
-#include "Abstract\Cipher.h"
+#include "..\Abstract\Cipher.h"
 
 class Gaderypoluki : AbstractCipher
 {
