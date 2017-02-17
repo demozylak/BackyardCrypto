@@ -35,6 +35,7 @@ string MathAlphabet::encrypt(string message)
 	every "a" changes into "z", every "d" into "w" et cetera*/
 	string alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	string klucz = key->getPassword();
+	assert(!checkForRepeatingCharacters(klucz));
 	assert(alfabet.length() == klucz.length());   //kinda obvious what it does; the problem is whether we should immidiately stop program (assert), or do something else - to be discussed
 	for (int i = 0; i < klucz.length(); i++) {
 		klucz.at(i) = toupper(klucz.at(i));				//casts klucz to uppercase
@@ -57,10 +58,29 @@ string MathAlphabet::encrypt(string message)
 	return answer;
 }
 
-string MathAlphabet::decrypt(string message)
+bool MathAlphabet::checkForRepeatingCharacters(std::string message)
 {
+	int znakiASCII[256] = { 0, };
+	char char_from_string;
+	int int_from_char;
+	for (int i = 0; i <message.length(); i++)
+	{
+		char_from_string = message[i];
+		int_from_char = (int)char_from_string;
+		znakiASCII[int_from_char]++;
+		if (znakiASCII[int_from_char] > 1) {
+			return true;
+		}
+	}
+	return false;
+}
+
+string MathAlphabet::decrypt(string message)
+{	//same as encrypt, but alphabet is now klucz, and klucz is now alphabet
 	string klucz = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	string alfabet = key->getPassword();
+	assert(!checkForRepeatingCharacters(alfabet));
+
 	assert(alfabet.length() == klucz.length());   //kinda obvious what it does; the problem is whether we should immidiately stop program (assert), or do something else - to be discussed
 	for (int i = 0; i < klucz.length(); i++) {
 		klucz.at(i) = toupper(klucz.at(i));				//casts klucz to uppercase

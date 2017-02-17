@@ -16,4 +16,7 @@ public:
 	std::string getName();
 	std::string decrypt(std::string message);
 	std::string encrypt(std::string message);
+
+	//returns true if there are duplicate characters in a string, false otherwise
+	bool checkForRepeatingCharacters(std::string message);
 };
