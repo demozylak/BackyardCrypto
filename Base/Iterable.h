@@ -9,12 +9,12 @@ template <typename T> class Iterable
 protected:
 	friend class Iterator<T>;
 	/* return n-t element */
-	T getElement(unsigned int n);
+	virtual T getElement(unsigned int n) = 0;
 	/* get number of elements */
-	unsigned int getLength();
+	virtual unsigned int getLength() = 0;
 public:
 	/* create and return iterator */
-	Iterator<T>* getIterator();
+	virtual Iterator<T>* getIterator() = 0;
 
 };
 

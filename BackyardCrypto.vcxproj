@@ -89,6 +89,7 @@
   <ItemGroup>
     <ClCompile Include="Base\Key.cpp" />
     <ClCompile Include="Gaderypoluki.cpp" />
+    <ClCompile Include="KeyReader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StdOutput.cpp" />
     <ClCompile Include="WhiteRemove.cpp" />
