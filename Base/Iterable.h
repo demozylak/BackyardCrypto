@@ -14,7 +14,7 @@ protected:
 	unsigned int getLength();
 public:
 	/* create and return iterator */
-	Iterator<T> getIterator();
+	Iterator<T>* getIterator();
 
 };
 
