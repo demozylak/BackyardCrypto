@@ -32,6 +32,6 @@ Message* Message::encrypt(AbstractCipher *cipher){
 
 Message* Message::decrypt(AbstractCipher *cipher){
 
-	msg = cipher->encrypt(msg);
+	msg = cipher->decrypt(msg);
 	return this;
 }
