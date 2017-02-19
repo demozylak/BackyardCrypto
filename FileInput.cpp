@@ -24,7 +24,7 @@ std::string FileInput::getString()
 	{
 		while (getline(plik, message))
 		{
-			wyjscie.append(message + " ");
+			wyjscie.append(message + "\n");
 		}
 	}
 	return wyjscie;
