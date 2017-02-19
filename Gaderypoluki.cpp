@@ -33,7 +33,7 @@ void Gaderypoluki::setKey(Key * key){
 
 string Gaderypoluki::getName(){
 
-	return key->getMethod();
+	return "Gaderypoluki";
 
 }
 
