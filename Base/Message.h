@@ -20,5 +20,7 @@ public:
 	/* visitor pattern */
 	virtual Message* encrypt(AbstractCipher *cipher);
 	virtual Message* decrypt(AbstractCipher *cipher);
+private:
+	std::string msg;
 };
 
