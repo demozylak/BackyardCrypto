@@ -7,7 +7,7 @@ class FileOutput :
 {
 protected:
 	std::string param;
-	ofstream plik;
+	std::ofstream plik;
 public:
 	//param is path to file saved in .txt; don't append ".txt" to filename    
 	FileOutput(std::string param); 
