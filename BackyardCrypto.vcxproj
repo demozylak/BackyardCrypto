@@ -88,6 +88,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base\Key.cpp" />
+    <ClCompile Include="CipherLocator.cpp" />
     <ClCompile Include="FileInput.cpp" />
     <ClCompile Include="FileOutput.cpp" />
     <ClCompile Include="Gaderypoluki.cpp" />
