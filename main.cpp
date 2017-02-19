@@ -62,6 +62,6 @@ int main(int argc, char** argv)
 
 	msg->outMessage(output);
 
-
+	system("pause");
 	return 0;
 }

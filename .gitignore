@@ -8,3 +8,5 @@ Release/*
 /BackyardCrypto.VC.VC.opendb
 ipch/*
 Test/*
+key.txt
+msg.txt

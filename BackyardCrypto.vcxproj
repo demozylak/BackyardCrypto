@@ -95,6 +95,7 @@
     <ClCompile Include="KeyReader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mathalphabet.cpp" />
+    <ClCompile Include="Message.cpp" />
     <ClCompile Include="StdOutput.cpp" />
     <ClCompile Include="WhiteRemove.cpp" />
   </ItemGroup>
