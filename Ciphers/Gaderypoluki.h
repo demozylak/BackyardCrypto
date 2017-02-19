@@ -3,7 +3,7 @@
 #include <algorithm>
 #include "..\Abstract\Cipher.h"
 
-class Gaderypoluki : AbstractCipher
+class Gaderypoluki : public AbstractCipher
 {
 protected:
 	Key *key;
