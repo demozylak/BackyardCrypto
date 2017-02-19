@@ -59,6 +59,7 @@ int main(int argc, char** argv)
 	}
 
 	//out Message depending on args
+
 	msg->outMessage(output);
 
 

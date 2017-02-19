@@ -8,6 +8,4 @@ key - those predefined chars for example
 */
 class Armor : AbstractCipher
 {
-
 };
-

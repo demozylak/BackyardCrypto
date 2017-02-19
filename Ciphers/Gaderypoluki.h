@@ -17,4 +17,3 @@ public:
 	std::string decrypt(std::string message);
 	std::string encrypt(std::string message);
 };
-
