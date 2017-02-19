@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -88,9 +88,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base\Key.cpp" />
+    <ClCompile Include="FileInput.cpp" />
+    <ClCompile Include="FileOutput.cpp" />
     <ClCompile Include="Gaderypoluki.cpp" />
     <ClCompile Include="KeyReader.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mathalphabet.cpp" />
     <ClCompile Include="StdOutput.cpp" />
     <ClCompile Include="WhiteRemove.cpp" />
   </ItemGroup>
@@ -108,6 +111,9 @@
     <ClInclude Include="Ciphers\Gaderypoluki.h" />
     <ClInclude Include="Ciphers\RotN.h" />
     <ClInclude Include="Ciphers\WhiteRemove.h" />
+    <ClInclude Include="FileInput.h" />
+    <ClInclude Include="FileOutput.h" />
+    <ClInclude Include="mathalphabet.h" />
     <ClInclude Include="StdOutput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
