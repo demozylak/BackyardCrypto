@@ -46,11 +46,11 @@ int main(int argc, char** argv)
 
 
 	//get iterator from KeyReader, iterate over it, decipher message
-	Iterator<Key> *it = kr->getIterator();
+	Iterator<Key*> *it = kr->getIterator();
 
 	CipherLocator *locator = new CipherLocator;
 
-	while (!it->end())
+	while (!it->isEnd())
 	{
 		Key *k = it->next(); // get next key
 		AbstractCipher *cipher = locator->getCipher(k); // get cipher
