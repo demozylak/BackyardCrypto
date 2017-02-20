@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+
 #include "Key.h"
 #include "../Abstract/Cipher.h"
 /*
@@ -7,9 +8,15 @@
 */
 class CipherLocator
 {
+protected:
+	AbstractCipher ** ciphers; 
 public:
+	
+	CipherLocator();
+	~CipherLocator();
+	
 	/* Returns cipher reference by its key (key has ciphers name) */
-	AbstractCipher * getCipher(Key &key);
+	AbstractCipher * getCipher(Key *key);
 
 };
 

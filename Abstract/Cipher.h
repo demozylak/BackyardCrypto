@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "Key.h"
+#include "../Base/Key.h"
 
 /*
 Ciphers derivate from this
@@ -8,8 +8,11 @@ Ciphers derivate from this
 class AbstractCipher
 {
 public:
+	
+	AbstractCipher() {};
+	
 	/* algorithms key as param */
-	AbstractCipher(Key &key);
+	virtual void setKey(Key *key) = 0;
 
 	/* returns ciphers name eg "rot13", "AES" (xd) */
 	virtual std::string getName() = 0;

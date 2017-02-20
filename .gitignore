@@ -4,4 +4,9 @@ Release/*
 *.opensdf
 *.sln
 *.suo
-*.vcxproj
+/BackyardCrypto.VC.db
+/BackyardCrypto.VC.VC.opendb
+ipch/*
+Test/*
+key.txt
+msg.txt
