@@ -33,7 +33,7 @@ void Gaderypoluki::setKey(Key * key){
 
 string Gaderypoluki::getName(){
 
-	return "Gaderypoluki";
+	return key->getMethod();
 
 }
 
@@ -57,34 +57,47 @@ std::string Gaderypoluki::decrypt(std::string message){
 /*Codes input message, returns changed input*/
 string Gaderypoluki::encrypt(std::string message) {
 
-	const char cipher[] = { "GADERYPOLUKI" };
+	//Cipher code can be anything typed as key password (even amount of chars)
+	string cipher_password = key->getPassword();
+
+	//Checking if char amount in cipher is even 
+	if (cipher_password.length() % 2 == 0) {
+		
+		const char *cipher = cipher_password.c_str();
+
+		//Converting all letters to uppercase
+		transform(message.begin(), message.end(), message.begin(), ::toupper);
+		transform(cipher_password.begin(), cipher_password.end(),
+			cipher_password.begin(), ::toupper);
+
+		for (int i = 0; i < message.length(); i++) {
+
+			for (int j = 0; j < strlen(cipher); j++) {
 
 
-	//Converting all letters to uppercase
-	transform(message.begin(), message.end(), message.begin(), ::toupper);
+				if (message[i] == cipher[j]) {
 
-
-	for (int i = 0; i < message.length(); i++) {
-
-		for (int j = 0; j < strlen(cipher); j++) {
-
-			
-			if (message[i] == cipher[j]) {
-
-				if (j % 2 == 0) {
-					message[i] = cipher[j + 1];
-					break;
+					if (j % 2 == 0) {
+						message[i] = cipher[j + 1];
+						break;
+					}
+					else {
+						message[i] = cipher[j - 1];
+						break;
+					}
 				}
-				else {
-					message[i] = cipher[j - 1];
-					break;
-				}
+
+
 			}
-
-
 		}
+
+		return message;			//Returns uppercase, ciphered message
+
 	}
-
-	return message;			//Returns uppercase, ciphered message
-
+	
+	else {						
+		//error message
+		return message + " can't be encrypted!\n"
+			+ "Char amount in key password has to be even!";
+	}
 }
