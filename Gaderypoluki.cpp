@@ -93,6 +93,7 @@ string Gaderypoluki::encrypt(std::string message) {
 
 		return message;			//Returns uppercase, ciphered message
 
+
 	}
 	
 	else {						
