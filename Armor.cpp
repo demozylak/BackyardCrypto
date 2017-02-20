@@ -44,11 +44,10 @@ std::string encrypt(std::string message){
 	/* Step 3: Put your junk in that box.  */
 
 	std::string beginning = "---------------CODING YOUR MESSAGE----------------\n";
-	std::string ending =    "---------------END OF YOUR MESSAGE----------------";
+	std::string ending =    "\n---------------END OF YOUR MESSAGE----------------";
 
-	message.insert(message.begin, beginning);
-	message.insert(message.end, ending);
 
+	message = beginning + message + ending;
 
 
 
