@@ -87,6 +87,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Base\Key.cpp" />
     <ClCompile Include="CipherLocator.cpp" />
     <ClCompile Include="FileInput.cpp" />
